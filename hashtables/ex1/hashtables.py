@@ -50,12 +50,13 @@ def hash_table_insert(hash_table, key, value):
         new_pair.next = hash_table.storage[index]
         hash_table.storage[index] = new_pair
 
-
 # '''
 # Fill this in.
 
 # If you try to remove a value that isn't there, print a warning.
 # '''
+
+
 def hash_table_remove(hash_table, key):
     index = hash(key, len(hash_table.storage))
 
